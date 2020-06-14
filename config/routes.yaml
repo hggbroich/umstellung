@@ -1,3 +1,9 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+
+composer:
+  resource: '@ComposerDependencyListBundle/Controller'
+  type: annotation
+  prefix: /dependencies

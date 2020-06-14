@@ -1,0 +1,17 @@
+common:
+  app:
+    url: "%env(APP_URL)%"
+    name: "HGG ICC-Umstellung"
+    version: "1.0.0"
+    project_url: ~
+    logo: "%env(APP_LOGO)%"
+    small_logo: "%env(APP_SMALLLOGO)%"
+  locales:
+    - de
+  menu: mainMenu
+  templates:
+    mail: '_mail/index.html.twig'
+    logs: '_logs/index.html.twig'
+    clear_logs: '_logs/clear.html.twig'
+  disable:
+    saml: true

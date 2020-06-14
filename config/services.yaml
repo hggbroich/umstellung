@@ -25,3 +25,17 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # Dark mode
+    SchoolIT\CommonBundle\DarkMode\DarkModeManagerInterface:
+        class: App\DarkMode\DarkModeManager
+
+    # Menu
+    App\Menu\Builder:
+        tags:
+            - { name: knp_menu.menu_builder, method: mainMenu, alias: mainMenu }
+            - { name: knp_menu.menu_builder, method: servicesMenu, alias: servicesMenu }
+
+    SchoolIT\CommonBundle\Menu\Voter:
+        tags:
+            - { name: knp_menu.voter }

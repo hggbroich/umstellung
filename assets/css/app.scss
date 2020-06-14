@@ -1,0 +1,56 @@
+$enable-shadows: true;
+$enable-gradients: true;
+
+// Import SCSS from custom
+@import "custom/*.scss";
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Import FontAwesome
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+// Import SchoolIT design
+@import '../../vendor/schoolit/common-bundle/Resources/assets/css/variables.scss';
+@import '../../vendor/schoolit/common-bundle/Resources/assets/css/layout.scss';
+@import '../../vendor/schoolit/common-bundle/Resources/assets/css/additions.scss';
+
+// Import SCSS from overrides
+@import "overrides/*.scss";
+
+small, .small {
+    font-size: 90% !important;
+}
+
+table {
+    .column-320 {
+        width: 320px;
+    }
+
+    td {
+        p, ul {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+form {
+    .invalid-feedback {
+        font-size: 90% !important;
+    }
+}
+
+header {
+    .navbar {
+        .navbar-nav {
+            .navbar-text {
+                color: $white;
+                padding: $navbar-padding-y+$nav-link-padding-y $nav-link-padding-x;
+            }
+        }
+    }
+}
+
