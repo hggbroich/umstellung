@@ -1,0 +1,121 @@
+{% extends "main.html.twig" %}
+
+{% block title %}Neue Schülerinnen/Schüler{% endblock %}
+
+{% block content %}
+    <div class="steps">
+        <div class="step-header">
+            <div class="circle">1</div>
+            <div class="label">Start-Kennwort ändern</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        Klicke unten auf den Button, um zur Private Cloud zu gelangen (darüber kannst du dein Kennwort ändern).
+                    </p>
+
+                    <a href="https://netman.hgg-broich.de" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fa fa-arrow-right"></i> Zur NetMan Private Cloud
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">2</div>
+            <div class="label">Kennwort ändern-Dialog öffnen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>
+                                Klicke unten rechts auf <button type="button" class="btn btn-outline-primary btn-sm">Kennwort ändern</button>.
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/images/tutorials/students/new/private-cloud-1.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">3</div>
+            <div class="label">Kennwort ändern</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ol>
+                                <li>
+                                    Trage deinen Benutzernamen und dein Kennwort ein. Beide findest du auf dem Zettel,
+                                    den du am Kennenlerntag im Juni erhalten hast.
+                                </li>
+                                <li>
+                                    Trage ein neues Kennwort ein, was nur du kennst.
+                                </li>
+                            </ol>
+
+                            <div class="bs-callout bs-callout-danger">
+                                <h4><i class="fa fa-exclamation-triangle"></i> Wichtig beim Kennwort</h4>
+
+                                <p>
+                                    Achte darauf, dass dein Kennwort folgende Regeln einhält:
+                                </p>
+
+                                <ul>
+                                    <li>mindestens acht Zeichen</li>
+                                    <li>es müssen enthalten sein: mindestens eine Ziffer, mindestens ein Sonderzeichen und mindestens ein Klein- sowie Großbuchstabe</li>
+                                    <li>erlaubte Sonderzeichen: @ # $ % ^ & * - _ ! + = [ ] { } | \ : ' , . ? / ` ~ " ( ) ;</li>
+                                    <li><strong>nicht erlaubt:</strong> Umlaute und Leerzeichen</li>
+                                </ul>
+                            </div>
+
+                            <ol start="3">
+                                <li>Klicke zum Abschluss auf <button class="btn btn-primary btn-sm">Kennwort ändern</button>.</li>
+                                <li>Den Tab mit der Private Cloud kannst du nun schließen.</li>
+                            </ol>
+                        </div>
+
+                        <div class="col-md-6 text-center">
+                            <img src="/images/tutorials/students/new/private-cloud-2.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">4</div>
+            <div class="label">Fertig</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card border-success">
+                <div class="card-body d-flex align-items-center mb-0">
+                    <i class="fa fa-check-circle mr-2 fa-3x text-success"></i>
+                    <p class="mb-0">
+                        Du kannst dich jetzt am ICC anmelden. Nutze dazu deine schulische E-Mail-Adresse (diese findest du auch auf dem Zettel) und das Kennwort.
+                    </p>
+
+                    <a href="https://icc.hgg-broich.de/" class="btn btn-primary btn-sm flex-grow-1 flex-shrink-0 ml-2">
+                        <i class="fa fa-arrow-right"></i> Los geht's
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

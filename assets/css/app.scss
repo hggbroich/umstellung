@@ -54,3 +54,45 @@ header {
     }
 }
 
+.steps {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+        background: $primary;
+        color: $white;
+        line-height: 1em;
+        padding: .5em 0;
+        margin: .25rem;
+    }
+
+    .label {
+        color: $secondary;
+        font-size: 1rem;
+    }
+}
+
+.line {
+    flex: 1 0 32px;
+    min-width: 1px;
+    min-height: 1px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .12);
+}

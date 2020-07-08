@@ -2,12 +2,20 @@
 
 namespace App\Menu;
 
+use DateTime;
 use Knp\Menu\FactoryInterface;
+use SchoolIT\CommonBundle\Helper\DateHelper;
 
 class Builder {
+
+    private $date;
+    private $dateHelper;
+
     private $factory;
 
-    public function __construct(FactoryInterface $factory) {
+    public function __construct(string $date, DateHelper $dateHelper, FactoryInterface $factory) {
+        $this->date = new DateTime($date);
+        $this->dateHelper = $dateHelper;
         $this->factory = $factory;
     }
 
@@ -19,6 +27,24 @@ class Builder {
             'route' => 'index'
         ])
             ->setAttribute('icon', 'fa fa-home');
+
+        if($this->dateHelper->getToday() >= $this->date) {
+            $menu->addChild('Neue Eltern', [
+                'route' => 'tutorial_new_parents'
+            ]);
+
+            $menu->addChild('Bestehende Eltern', [
+                'route' => 'tutorial_existing_parents'
+            ]);
+
+            $menu->addChild('Neue Schülerinnen/Schüler', [
+                'route' => 'tutorial_new_students'
+            ]);
+
+            $menu->addChild('Bestehende Schülerinnen/Schüler', [
+                'route' => 'tutorial_existing_students'
+            ]);
+        }
 
         return $menu;
     }

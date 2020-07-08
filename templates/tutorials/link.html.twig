@@ -1,0 +1,60 @@
+{% extends "main.html.twig" %}
+
+{% block content %}
+    <div class="steps">
+        <div class="step-header">
+            <div class="circle">1</div>
+            <div class="label">Verknüpfungsprozess beginnen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        Öffnen Sie den <a href="https://sso.hgg-broich.de" target="_blank"><i class="fa fa-external-link-alt"></i> HGG Single-Sign-On</a>, melden Sie sich an und
+                        und klicken Sie auf den Button <a href="https://sso.hgg-broich.de/link" class="btn btn-outline-primary btn-sm" target="_blank"><i class="fa fa-link"></i> Lernende verknüpfen</a>.
+                    </p>
+
+                    <div class="text-center">
+                        <img src="/images/tutorials/parents/link-student-1.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">2</div>
+            <div class="label">Kind verknüpfen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        Ihr Kind trägt seine/ihre Benutzerdaten ein und klickt auf "verknüpfen".
+                    </p>
+
+                    <div class="text-center">
+                        <img src="/images/tutorials/parents/link-student-2.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">3</div>
+            <div class="label">Verknüpfung abgeschlossen.</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card border-success">
+                <div class="card-body d-flex align-items-center mb-0">
+                    <i class="fa fa-check-circle mr-2 fa-3x text-success"></i>
+                    <p>Die Verknüpfung ist nun abgeschlossen. Wiederholen Sie Schritt 2 für jedes Kind am HGG.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "knplabs/knp-menu-bundle": "^3.0",
+        "ramsey/uuid": "^4.0",
         "schoolit/common-bundle": "dev-master",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.4.*",
@@ -32,8 +33,7 @@
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^4.0",
-        "symfony/profiler-pack": "*",
-        "symfony/web-server-bundle": "^4.0"
+        "symfony/profiler-pack": "*"
     },
     "config": {
         "preferred-install": {

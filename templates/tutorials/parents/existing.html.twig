@@ -1,0 +1,174 @@
+{% extends "main.html.twig" %}
+
+{% block title %}Bestehende Elternteile{% endblock %}
+
+{% block content %}
+    <div class="steps">
+        <div class="step-header">
+            <div class="circle">1</div>
+            <div class="label">Registrierungscode abrufen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    {% if user is null %}
+                        <p>
+                            Tragen Sie Ihren bisherigen Anmeldedaten von Ihrem Elternaccount ein und klicken Sie auf "Code abrufen".
+                        </p>
+
+                        {% if error is not null %}
+                            <div class="bs-callout bs-callout-danger">
+                                <p>{{ error }}</p>
+                            </div>
+                        {% endif %}
+
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="username">Benutzername</label>
+                                <input type="text" class="form-control" id="username" name="_username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Passwort</label>
+                                <input type="password" class="form-control" id="password" name="_password">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-sm">Code abrufen</button>
+                        </form>
+                    {% else %}
+                        <p>
+                            Liebes Elternteil von {{ user.firstname }} {{ user.lastname }},
+                        </p>
+
+                        <p>
+                            Ihr Registrierungscode lautet: <code style="font-size: 100%">{{ code }}</code>
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">2</div>
+            <div class="label">Registrierung starten</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    Öffnen Sie den <a href="https://sso.hgg-broich.de" target="_blank"><i class="fa fa-external-link-alt"></i> HGG Single-Sign-On</a>
+                    und klicken Sie auf den Button <a href="https://sso.hgg-broich.de/register" class="btn btn-primary btn-sm" target="_blank">Registrierungscode einlösen</a>.
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">3</div>
+            <div class="label">Registrierungscode eingeben</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        Geben Sie den Registrierungscode ein, den Sie von der Schule erhalten haben:
+                    </p>
+
+                    <div class="text-center">
+                        <img src="/images/tutorials/parents/existing/enter-code.png" class="img-fluid">
+                    </div>
+
+                    <p>
+                        Klicken Sie anschließend auf <button type="button" class="btn btn-primary btn-sm">Code einlösen</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">4</div>
+            <div class="label">Registrierung abschließen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body container-fluid">
+                    <div class="row">
+
+                        <div class="col-md-7">
+                            <p>
+                                Sie werden aufgefordert, die Registrierung abzuschließen. Dazu müssen Sie eine Anmelde-E-Mail-Adresse auswählen
+                                und ein eigenes Passwort vergeben.
+                            </p>
+
+                            <div class="alert alert-danger d-flex align-items-center">
+                                <i class="fa fa-exclamation-triangle mr-2"></i>
+                                <p>Die Anmelde-E-Mail-Adresse setzt sich aus einem von Ihnen gewählten Teil und dem Suffix <code>@e.hgg-broich.de</code> zusammen.</p>
+                            </div>
+
+                            <div class="alert alert-danger d-flex align-items-center">
+                                <i class="fa fa-exclamation-triangle mr-2"></i>
+                                <p>Bitte beachten Sie die Anforderungen an das Passwort.</p>
+                            </div>
+
+                            <div class="alert alert-danger d-flex align-items-center">
+                                <i class="fa fa-exclamation-triangle mr-2"></i>
+                                <p>Bitte lesen Sie die Datenschutzerklärung und bestätigen Sie diese.</p>
+                            </div>
+
+                            <div class="alert alert-info d-flex align-items-center">
+                                <i class="fa fa-info-circle mr-2"></i>
+                                <p>Die Angaben des Vor- und Nachnamens sowie der E-Mail-Adresse sind freiwillig. Wenn Sie eine E-Mail-Adresse angeben, können Sie Ihr Passwort bei Bedarf zurücksetzen. Wenn Sie diese Angaben machen möchte, klicken Sie auf den Button <button class="btn btn-outline-primary btn-sm"><i class="fa fa-plus"></i> Freiwillige Angaben anzeigen</button> </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="/images/tutorials/parents/new/complete.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="step-header">
+            <div class="circle">5</div>
+            <div class="label">E-Mail-Bestätigung (optional)</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        Falls Sie eine E-Mail-Adresse eingegeben haben, müssen Sie Ihre E-Mail-Adresse bestätigen.
+                        Erst dann können Sie sich anmelden.
+                    </p>
+
+                    <div class="alert alert-info d-flex align-items-center mb-0">
+                        <i class="fa fa-info-circle mr-2"></i>
+                        <p>Falls Sie keine E-Mail-Adresse angegeben haben, können Sie sich nun anmelden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="step-header">
+            <div class="circle">6</div>
+            <div class="label">Registrierung abgeschlossen</div>
+        </div>
+        <div class="line"></div>
+        <div class="step-content">
+            <div class="card border-success">
+                <div class="card-body d-flex align-items-center mb-0">
+                    <i class="fa fa-check-circle mr-2 fa-3x text-success"></i>
+                    <p>Die Registrierung ist nun abgeschlossen. Nun können Sie Ihre Kinder mit Ihrem Account verknüpfen. <a href="{{ path('link_students') }}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-right"></i> Anleitung</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

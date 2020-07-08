@@ -4,6 +4,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    START_DATE: '%env(START_DATE)%'
 
 services:
     # default configuration for services in *this* file
@@ -32,6 +33,8 @@ services:
 
     # Menu
     App\Menu\Builder:
+        arguments:
+            $date: '%env(START_DATE)%'
         tags:
             - { name: knp_menu.menu_builder, method: mainMenu, alias: mainMenu }
             - { name: knp_menu.menu_builder, method: servicesMenu, alias: servicesMenu }
@@ -39,3 +42,17 @@ services:
     SchoolIT\CommonBundle\Menu\Voter:
         tags:
             - { name: knp_menu.voter }
+
+    App\Registration\CodeManager:
+        arguments:
+            $userTypeId: '%env(PARENT_TYPE_ID)%'
+            $iccConnection: '@doctrine.dbal.icc_connection'
+            $idpConnection: '@doctrine.dbal.idp_connection'
+
+    App\Security\ParentAuthenticator:
+        arguments:
+            $connection: '@doctrine.dbal.icc_connection'
+
+    App\EventSubscriber\RequestInterceptorSubscriber:
+        arguments:
+            $date: '%env(START_DATE)%'

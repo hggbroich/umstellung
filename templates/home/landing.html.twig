@@ -1,0 +1,62 @@
+{% extends "main.html.twig" %}
+
+{% block title %}Willkommen{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Das neue ICC ist da 🎉</h1>
+        <p class="lead">
+            Auf diesen Seiten werden Anleitungen bereitgehalten, wie man sich am neuen ICC anmeldet.
+        </p>
+        <hr class="my-4">
+        <p>Bei Problemen bitte an <i class="fa fa-envelope"></i> <a href="mailto:helpdesk@hgg-broich.de">helpdesk@hgg-broich.de</a> wenden.</p>
+    </div>
+
+    <div class="card-deck mb-3">
+        <div class="card">
+            <a class="card-body" href="{{ path('tutorial_new_parents') }}">
+                <h5 class="card-title">
+                    Neue Eltern
+                </h5>
+                <h6 class="card-subtitle text-muted">
+                    Wenn Sie zum Schuljahr 2020/21 ein Kind am HGG angemeldet haben, klicken Sie hier.
+                </h6>
+            </a>
+        </div>
+
+        <div class="card">
+            <a class="card-body" href="{{ path('tutorial_existing_parents') }}">
+                <h5 class="card-title">
+                    Bestehende Eltern
+                </h5>
+                <h6 class="card-subtitle text-muted">
+                    Wenn Sie bereits einen Elternaccount besitzen, klicken Sie hier.
+                </h6>
+            </a>
+        </div>
+    </div>
+
+    <div class="card-deck mb-3">
+        <div class="card">
+            <a class="card-body" href="{{ path('tutorial_new_students') }}">
+                <h5 class="card-title">
+                    Neue Schülerin/Neuer Schüler
+                </h5>
+                <h6 class="card-subtitle text-muted">
+                    Wenn du zum Schuljahr 2020/21 neu am HGG bist, klicke hier.
+                </h6>
+            </a>
+        </div>
+
+        <div class="card">
+            <a class="card-body" href="{{ path('tutorial_existing_students') }}">
+                <h5 class="card-title">
+                    Bestehende Schülerin/Bestehender Schüler
+                </h5>
+                <h6 class="card-subtitle text-muted">
+                    Wenn du bereits am HGG bist, klicke hier.
+                </h6>
+            </a>
+        </div>
+    </div>
+{% endblock %}
