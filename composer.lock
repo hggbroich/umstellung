@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a78db369690546125712bc6d6b357bd8",
+    "content-hash": "1399350f1a506eaa5d77bd3a44de1626",
     "packages": [
         {
             "name": "brick/math",
@@ -2171,7 +2171,7 @@
             "time": "2020-03-29T20:13:32+00:00"
         },
         {
-            "name": "schoolit/common-bundle",
+            "name": "schulit/common-bundle",
             "version": "1.0.0",
             "source": {
                 "type": "git",
@@ -2218,7 +2218,6 @@
             "license": [
                 "MIT"
             ],
-            "abandoned": "schulit/common-bundle",
             "time": "2020-07-08T13:26:05+00:00"
         },
         {

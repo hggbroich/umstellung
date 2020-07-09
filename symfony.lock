@@ -188,8 +188,8 @@
     "ramsey/uuid": {
         "version": "4.0.1"
     },
-    "schoolit/common-bundle": {
-        "version": "dev-master"
+    "schulit/common-bundle": {
+        "version": "1.0.0"
     },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.1"
