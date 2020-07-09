@@ -7,7 +7,7 @@
         "ext-iconv": "*",
         "knplabs/knp-menu-bundle": "^3.0",
         "ramsey/uuid": "^4.0",
-        "schoolit/common-bundle": "dev-master",
+        "schoolit/common-bundle": "^1.0.0",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.4.*",
         "symfony/console": "4.4.*",
@@ -79,11 +79,5 @@
             "allow-contrib": false,
             "require": "4.4.*"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/schulit/common-bundle"
-        }
-    ]
+    }
 }

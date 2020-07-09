@@ -2,7 +2,7 @@
 
 namespace App\DarkMode;
 
-use SchoolIT\CommonBundle\DarkMode\DarkModeManagerInterface;
+use SchulIT\CommonBundle\DarkMode\DarkModeManagerInterface;
 
 class DarkModeManager implements DarkModeManagerInterface {
 

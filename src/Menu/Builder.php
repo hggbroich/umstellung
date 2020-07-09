@@ -4,7 +4,7 @@ namespace App\Menu;
 
 use DateTime;
 use Knp\Menu\FactoryInterface;
-use SchoolIT\CommonBundle\Helper\DateHelper;
+use SchulIT\CommonBundle\Helper\DateHelper;
 
 class Builder {
 

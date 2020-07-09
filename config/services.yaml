@@ -28,7 +28,7 @@ services:
     # please note that last definitions always *replace* previous ones
 
     # Dark mode
-    SchoolIT\CommonBundle\DarkMode\DarkModeManagerInterface:
+    SchulIT\CommonBundle\DarkMode\DarkModeManagerInterface:
         class: App\DarkMode\DarkModeManager
 
     # Menu
@@ -39,7 +39,7 @@ services:
             - { name: knp_menu.menu_builder, method: mainMenu, alias: mainMenu }
             - { name: knp_menu.menu_builder, method: servicesMenu, alias: servicesMenu }
 
-    SchoolIT\CommonBundle\Menu\Voter:
+    SchulIT\CommonBundle\Menu\Voter:
         tags:
             - { name: knp_menu.voter }
 
