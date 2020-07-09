@@ -81,9 +81,6 @@
     "doctrine/sql-formatter": {
         "version": "1.1.0"
     },
-    "egulias/email-validator": {
-        "version": "2.1.17"
-    },
     "fightbulc/moment": {
         "version": "1.32.1"
     },
@@ -229,9 +226,6 @@
     },
     "sensiolabs/ansi-to-html": {
         "version": "v1.2.0"
-    },
-    "swiftmailer/swiftmailer": {
-        "version": "v6.2.3"
     },
     "symfony/apache-pack": {
         "version": "1.0",
@@ -460,18 +454,6 @@
     "symfony/security": {
         "version": "v4.4.10"
     },
-    "symfony/security-bundle": {
-        "version": "4.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.4",
-            "ref": "7b4408dc203049666fe23fabed23cbadc6d8440f"
-        },
-        "files": [
-            "./config/packages/security.yaml"
-        ]
-    },
     "symfony/security-core": {
         "version": "v4.4.10"
     },
@@ -480,20 +462,6 @@
     },
     "symfony/stopwatch": {
         "version": "v4.4.10"
-    },
-    "symfony/swiftmailer-bundle": {
-        "version": "2.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "2.5",
-            "ref": "ae4d22af30bbd484506bc1817c5a3ef72c855b93"
-        },
-        "files": [
-            "./config/packages/dev/swiftmailer.yaml",
-            "./config/packages/swiftmailer.yaml",
-            "./config/packages/test/swiftmailer.yaml"
-        ]
     },
     "symfony/translation": {
         "version": "3.3",
