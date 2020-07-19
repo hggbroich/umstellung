@@ -22,8 +22,6 @@ class ParentAuthenticator {
             throw new AuthenticationException();
         }
 
-        dump($user);
-
         if(password_verify($password, $user['parent_password']) !== true) {
             throw new AuthenticationException();
         }
