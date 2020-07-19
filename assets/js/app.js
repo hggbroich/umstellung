@@ -2,8 +2,8 @@ require('../css/app.scss');
 
 import Stepper from 'bs-stepper'
 let bsn = require('bootstrap.native');
-require('../../vendor/schoolit/common-bundle/Resources/assets/js/polyfill');
-require('../../vendor/schoolit/common-bundle/Resources/assets/js/menu');
+require('../../vendor/schulit/common-bundle/Resources/assets/js/polyfill');
+require('../../vendor/schulit/common-bundle/Resources/assets/js/menu');
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('[title]').forEach(function(el) {

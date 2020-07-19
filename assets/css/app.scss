@@ -14,9 +14,9 @@ $enable-gradients: true;
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
 
 // Import SchoolIT design
-@import '../../vendor/schoolit/common-bundle/Resources/assets/css/variables.scss';
-@import '../../vendor/schoolit/common-bundle/Resources/assets/css/layout.scss';
-@import '../../vendor/schoolit/common-bundle/Resources/assets/css/additions.scss';
+@import '../../vendor/schulit/common-bundle/Resources/assets/css/variables.scss';
+@import '../../vendor/schulit/common-bundle/Resources/assets/css/layout.scss';
+@import '../../vendor/schulit/common-bundle/Resources/assets/css/additions.scss';
 
 // Import SCSS from overrides
 @import "overrides/*.scss";
