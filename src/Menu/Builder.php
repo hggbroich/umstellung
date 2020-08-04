@@ -37,6 +37,10 @@ class Builder {
                 'route' => 'tutorial_existing_parents'
             ]);
 
+            $menu->addChild('Schülerin/Schüler verknüpfen', [
+                'route' => 'link_students'
+            ]);
+
             $menu->addChild('Neue Schülerinnen/Schüler', [
                 'route' => 'tutorial_new_students'
             ]);

@@ -1,9 +1,13 @@
 {% extends "main.html.twig" %}
 
+{% block title %}Schülerin/Schüler verknüpfen{% endblock %}
+
 {% block content %}
+    {% set step = 0 %}
     <div class="steps">
+        {% set step = step + 1 %}
         <div class="step-header">
-            <div class="circle">1</div>
+            <div class="circle">{{ step }}</div>
             <div class="label">Verknüpfungsprozess beginnen</div>
         </div>
         <div class="line"></div>
@@ -22,9 +26,9 @@
             </div>
         </div>
         <div class="line"></div>
-
+        {% set step = step + 1 %}
         <div class="step-header">
-            <div class="circle">2</div>
+            <div class="circle">{{ step }}</div>
             <div class="label">Kind verknüpfen</div>
         </div>
         <div class="line"></div>
@@ -42,9 +46,9 @@
             </div>
         </div>
         <div class="line"></div>
-
+        {% set step = step + 1 %}
         <div class="step-header">
-            <div class="circle">3</div>
+            <div class="circle">{{ step }}</div>
             <div class="label">Verknüpfung abgeschlossen.</div>
         </div>
         <div class="line"></div>
